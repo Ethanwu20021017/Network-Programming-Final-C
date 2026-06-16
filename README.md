@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-這份專案是網路程式設計（Network Programming）Final Project 的 C 題實作。專案的主要目標，是在原本 TCP Socket Chat Room 的基礎上，進一步整合 **OpenSSL** 與 **SSL/TLS 加密機制**，建立一個具備安全通訊能力（Secure Communication）的多人聊天室系統。
+這份專案是網路程式設計Final Project 的 C 題實作。專案的主要目標，是在原本 TCP Socket Chat Room 的基礎上，進一步整合 **OpenSSL** 與 **SSL/TLS 加密機制**，建立一個具備安全通訊能力的多人聊天室系統。
 
-在一般的 TCP Chat Room 中，雖然可以可靠地傳送資料，但所有聊天內容都是以明文（Plain Text）的形式進行傳輸。若通訊封包遭到攔截，第三方便有機會直接讀取聊天內容。因此，我希望透過這份作業，將課堂中學習到的 Socket Programming 與 SSL/TLS 技術結合，讓聊天室不只是能夠聊天，而是能夠 **安全地聊天（Communicate Securely）**。
+在一般的 TCP Chat Room 中，雖然可以可靠地傳送資料，但所有聊天內容都是以明文的形式進行傳輸。若通訊封包遭到攔截，第三方便有機會直接讀取聊天內容。因此，我希望透過這份作業，將課堂中學習到的 Socket Programming 與 SSL/TLS 技術結合，讓聊天室不只是能夠聊天，而是能夠 **安全地聊天**。
 
 在本專案中，Client 與 Server 仍然以 TCP Socket 作為基礎架構，但所有資料傳輸皆透過：
 
